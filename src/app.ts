@@ -1,4 +1,4 @@
-import Server from '../conf/server'
+import Server from './conf/server'
 import { Router } from 'express'
 import router from './routes'
 

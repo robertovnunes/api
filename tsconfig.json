@@ -1,10 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "outDir": "./dist",
-    "strict": true,
-    "esModuleInterop": true,
+    "target": "ES2020", // Versão do JavaScript a ser gerada
+    "module": "commonjs", // Sistema de módulos
+    "outDir": "./dist", // Diretório para o código compilado
+    "rootDir": "./src", // Diretório raiz do código fonte TypeScript
+    "strict": true, // Ativar todas as verificações rigorosas
+    "esModuleInterop": true, // Habilitar compatibilidade com módulos ES6
+    "skipLibCheck": true, // Ignorar checagem de tipos de bibliotecas
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
